@@ -58,9 +58,20 @@
             background: url(https://d3d71ba2asa5oz.cloudfront.net/12037842/images/colorpro%20banner.jpg);
             background-position: center;
             background-size: cover;
-            height: 225px; width: 100%;
-            }
+            height: 300px; max-width: 100%;
+        }
 
+        @media (min-width: 480px) {
+            #banner { height: 200px; }
+        }
+
+        @media (min-width: 768px) {
+            #banner { height: 150px; }
+        }
+
+        @media (min-width: 992px) {
+            #banner { height: 300px; }
+        }
 
         /* Slider */
         * {
@@ -210,7 +221,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
             padding-left: 10px;
             
         color: white;
-
+        }
 		</style>
   </head>
   <body>
@@ -223,7 +234,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 	            <!-- ADD YOUR SELLER NAME OR LOGO HERE -->
 				<a class="navbar-brand" href="#"><img src="https://www.viewsonic.com/skin/frontend/smartwave/viewsonic/images/logo.png" height="30px"></a>
 	          </div>
-	        <div class="navbar-collapse collapse">
+	            <div class="navbar-collapse collapse">
 	            <ul class="nav navbar-nav navbar-right">
 					<!-- ADD MENU LINKS HERE. THESE ARE NON-FUNCTIONAL EXAMPLES. -->
                     <li><a href="#">Our eBay Store</a></li>
@@ -324,121 +335,122 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 			  </div><!-- /product-specs -->
               <br clear="both">
 		  </div><!-- /col-md-6 -->
-<div class="col-md-6">
-    
-     <h3>Specifications</h3>
-        <table>
-            <tr>
-            <th>Display</th>
-            <th>Value</th>
-            </tr>
-            <tr>
-            <td>Display Size</td>
-                <td>{{DISPLAY SIZE (IN)}}</td>
-            </tr>
-            <tr>
-            <td>Viewable Area</td>
-                <td>{{VIEWABLE SIZE}}</td>
-            </tr>
-            <tr>
-            <td>Panel Type</td>
-                <td>{{PANEL TYPE}}</td>
-            </tr>
-            <tr>
-                <td>Resolution</td>
-                <td>{{NATIVE RESOLUTION}}</td>
-            </tr>
-                <td>Static Contrast Ratio</td>
-                <td>{{CONTRAST RATIO}}</td>
-            <tr>
-                <td>Light Source</td>
-                <td>{{BACKLIGHT TYPE}}</td>
-            </tr>
-            <tr>
-                <td> Brightness</td>
-                <td>{{NE MONITORDISPLAYBRIGHTNESS}}</td>
-            </tr>
-            <tr>
-                <td>Aspect Ratio</td>
-                <td>{{ASPECT RATIO}}</td>
-            </tr>
-            <tr>
-            <td>Response Time</td>
-            <td>{{RESPONSE TIME (TYPICAL GTG)}}</td>
-            </tr>
-            <tr>
-                <td>Refresh Rate (Hz)</td>
-                <td>{{REFRESH RATE (HZ)}}</td>
-            </tr>
-            <tr>
-                <td>Connector</td>
-                <td>{{CONNECTIVITY}}</td>
-            </tr>
-            <tr>
-                <td>VESA Compatible</td>
-                <td>{{VESA MOUNTING STANDARD}}</td>
-            </tr>
-            <tr>
-                <td>Height Adjust</td>
-                <td>{{HEIGHT ADJUST}}</td>
-            </tr>
-            <tr>
-                <td>Swivel</td>
-                <td>{{SWIVEL}}</td>
-            </tr>
-            <tr>
-                <td>Tilt</td>
-                <td>{{TILT}}</td>
-            </tr>
-        </table>
-            </div>
-    </div><!-- /col-md-6 -->
         <div class="col-md-6">
-        <table>
-            <tr>
-                <th>Weight (Imperial)</th>
-                <th>Value</th>
-            </tr>
-            <tr>
-                <td>Net (lbs)</td>
-                <td>{{PRODUCT WEIGHT}}</td>
-            </tr>
-            <tr>
-                <td>Gross (lbs): </td>
-                <td>{{ITEMWEIGHT}}</td>
-            </tr>
-                <th>Dimensions (Imperial)(HxWxD)</th>
-                <th>Value</th>
-            <tr>
-                <td>Package (in)</td>
-                <td>{{ITEMHEIGHT}}x{{ITEMWIDTH}}x{{ITEMLENGTH}}</td>
-            </tr>
-            <tr>
-                <td>Physical (in)</td>
-                <td>{{PRODUCT DIMENSIONS - HXWXD (IN)}}</td>
-            </tr>
-                <th>General</th>
-                <th>Value</th>
-            <tr>
-                <td>Package Contents</td>
-                <td>{{PACKAGE CONTENTS}}</td>
-            </tr>
-            <tr>
-                <td>Warranty</td>
-                <td>{{AMAZON WARRANTY DESCRIPTION}}</td>
-            </tr>
-        </table>
-            </div>
+            
+            <h3>Specifications</h3>
+                <table>
+                    <tr>
+                    <th>Display</th>
+                    <th>Value</th>
+                    </tr>
+                    <tr>
+                    <td>Display Size</td>
+                        <td>{{DISPLAY SIZE (IN)}}</td>
+                    </tr>
+                    <tr>
+                    <td>Viewable Area</td>
+                        <td>{{VIEWABLE SIZE}}</td>
+                    </tr>
+                    <tr>
+                    <td>Panel Type</td>
+                        <td>{{PANEL TYPE}}</td>
+                    </tr>
+                    <tr>
+                        <td>Resolution</td>
+                        <td>{{NATIVE RESOLUTION}}</td>
+                    </tr>
+                        <td>Static Contrast Ratio</td>
+                        <td>{{CONTRAST RATIO}}</td>
+                    <tr>
+                        <td>Light Source</td>
+                        <td>{{BACKLIGHT TYPE}}</td>
+                    </tr>
+                    <tr>
+                        <td> Brightness</td>
+                        <td>{{NE MONITORDISPLAYBRIGHTNESS}}</td>
+                    </tr>
+                    <tr>
+                        <td>Aspect Ratio</td>
+                        <td>{{ASPECT RATIO}}</td>
+                    </tr>
+                    <tr>
+                    <td>Response Time</td>
+                    <td>{{RESPONSE TIME (TYPICAL GTG)}}</td>
+                    </tr>
+                    <tr>
+                        <td>Refresh Rate (Hz)</td>
+                        <td>{{REFRESH RATE (HZ)}}</td>
+                    </tr>
+                    <tr>
+                        <td>Connector</td>
+                        <td>{{CONNECTIVITY}}</td>
+                    </tr>
+                    <tr>
+                        <td>VESA Compatible</td>
+                        <td>{{VESA MOUNTING STANDARD}}</td>
+                    </tr>
+                    <tr>
+                        <td>Height Adjust</td>
+                        <td>{{HEIGHT ADJUST}}</td>
+                    </tr>
+                    <tr>
+                        <td>Swivel</td>
+                        <td>{{SWIVEL}}</td>
+                    </tr>
+                    <tr>
+                        <td>Tilt</td>
+                        <td>{{TILT}}</td>
+                    </tr>
+                </table>
+                    </div>
+        </div><!-- /col-md-6 -->
+        <div class="col-md-6">
+            <table>
+                <tr>
+                    <th>Weight (Imperial)</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Net (lbs)</td>
+                    <td>{{PRODUCT WEIGHT}}</td>
+                </tr>
+                <tr>
+                    <td>Gross (lbs): </td>
+                    <td>{{ITEMWEIGHT}}</td>
+                </tr>
+                    <th>Dimensions (Imperial)(HxWxD)</th>
+                    <th>Value</th>
+                <tr>
+                    <td>Package (in)</td>
+                    <td>{{ITEMHEIGHT}}x{{ITEMWIDTH}}x{{ITEMLENGTH}}</td>
+                </tr>
+                <tr>
+                    <td>Physical (in)</td>
+                    <td>{{PRODUCT DIMENSIONS - HXWXD (IN)}}</td>
+                </tr>
+                    <th>General</th>
+                    <th>Value</th>
+                <tr>
+                    <td>Package Contents</td>
+                    <td>{{PACKAGE CONTENTS}}</td>
+                </tr>
+                <tr>
+                    <td>Warranty</td>
+                    <td>{{AMAZON WARRANTY DESCRIPTION}}</td>
+                </tr>
+            </table>
+        </div>
 		<div class="col-md-12 footer">
-			<section>
-                <div class="footer-container">
-        <div class="image">
-        <img src="https://d3d71ba2asa5oz.cloudfront.net/12037842/images/viewsonic%20logo%202.png" height="30px">
-      </div>
-      <div class="text">
-        <p>Copyright <span>&copy;</span> 2021. All Rights Reserved.</p>
-      </div>
-    </div>
-</section>
+            <section>
+            <div class="footer-container">
+                <div class="image">
+                    <img src="https://d3d71ba2asa5oz.cloudfront.net/12037842/images/viewsonic%20logo%202.png" height="30px">
+                </div>
+                <div class="text">
+                    <p>Copyright <span>&copy;</span> 2021. All Rights Reserved.</p>
+                </div>
+            </div>
+            </section>
+        </div>
   </body>
-	</html>
+</html>
