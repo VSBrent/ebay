@@ -220,7 +220,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         }
 
         .features li {
-     line-height: 2.5em;
+            line-height: 1.5em;
+            margin-bottom: 12px;
+        }
+
+        .description {
+            line-height: 1.5em;
         }
         
 		</style>
@@ -294,7 +299,9 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 			<div class="col-md-6">
 	            <h1>{{ITEMTITLE}}</h1>
 			    <h2>{{ITEMBINPRICE}}</h2>
-			    <p>{{ITEMAUCTIONDESCRIPTION}}</p>
+                <div class="description">
+			    <p>{{ITEMAUCTIONDESCRIPTION}}
+                </div>
 
                 <h3>Key Features</h3>
                     <ul class="features li">
